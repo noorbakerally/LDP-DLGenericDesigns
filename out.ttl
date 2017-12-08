@@ -1,0 +1,149 @@
+<> {
+    <>      <http://www.w3.org/ns/ldp#contains>
+                    <LivingThings> .
+}
+
+<LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/instances> {
+    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/instances>
+            a       <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> ;
+            <http://www.w3.org/ns/ldp#contains>
+                    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/instances/human2> , <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/instances/human1> .
+}
+
+<LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/subcontainers> {
+    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/subcontainers>
+            a       <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> .
+}
+
+<LivingThings/subcontainers/Vertebrates/instances> {
+    <LivingThings/subcontainers/Vertebrates/instances>
+            a       <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> .
+}
+
+<LivingThings/subcontainers> {
+    <LivingThings/subcontainers>
+            a       <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> ;
+            <http://www.w3.org/ns/ldp#contains>
+                    <LivingThings/subcontainers/Vertebrates> .
+}
+
+<LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/instances/human2> {
+    <http://opensensingcity.emse.fr/test/data/human2>
+            a       <http://opensensingcity.emse.fr/test/ontology/HumanBeing> ;
+            <http://purl.org/dc/elements/1.1/title>
+                    "a human being" .
+    
+    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/instances/human2>
+            a       <http://www.w3.org/ns/ldp#RDFSource> ;
+            <http://xmlns.com/foaf/0.1/primaryTopic>
+                    <http://opensensingcity.emse.fr/test/data/human2> .
+}
+
+<LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/instances/human1> {
+    <http://opensensingcity.emse.fr/test/data/human1>
+            a       <http://opensensingcity.emse.fr/test/ontology/HumanBeing> ;
+            <http://purl.org/dc/elements/1.1/title>
+                    "a human being" .
+    
+    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/instances/human1>
+            a       <http://www.w3.org/ns/ldp#RDFSource> ;
+            <http://xmlns.com/foaf/0.1/primaryTopic>
+                    <http://opensensingcity.emse.fr/test/data/human1> .
+}
+
+<LivingThings/instances> {
+    <LivingThings/instances>
+            a       <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> .
+}
+
+<LivingThings/subcontainers/Vertebrates/subcontainers/Animal/instances/animal2> {
+    <http://opensensingcity.emse.fr/test/data/animal2>
+            a       <http://opensensingcity.emse.fr/test/ontology/Animal> ;
+            <http://purl.org/dc/elements/1.1/title>
+                    "an animal" .
+    
+    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/instances/animal2>
+            a       <http://www.w3.org/ns/ldp#RDFSource> ;
+            <http://xmlns.com/foaf/0.1/primaryTopic>
+                    <http://opensensingcity.emse.fr/test/data/animal2> .
+}
+
+<LivingThings/subcontainers/Vertebrates/subcontainers> {
+    <LivingThings/subcontainers/Vertebrates/subcontainers>
+            a       <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> ;
+            <http://www.w3.org/ns/ldp#contains>
+                    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal> .
+}
+
+<LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers> {
+    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers>
+            a       <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> ;
+            <http://www.w3.org/ns/ldp#contains>
+                    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing> .
+}
+
+<LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing> {
+    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing>
+            a       <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> ;
+            <http://www.w3.org/ns/ldp#contains>
+                    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/instances> , <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers/HumanBeing/subcontainers> ;
+            <http://xmlns.com/foaf/0.1/primaryTopic>
+                    <http://opensensingcity.emse.fr/test/ontology/HumanBeing> .
+    
+    <http://opensensingcity.emse.fr/test/ontology/HumanBeing>
+            <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                    <http://opensensingcity.emse.fr/test/ontology/Animal> .
+}
+
+<LivingThings/subcontainers/Vertebrates/subcontainers/Animal/instances> {
+    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/instances>
+            a       <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> ;
+            <http://www.w3.org/ns/ldp#contains>
+                    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/instances/animal1> , <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/instances/animal2> .
+}
+
+<LivingThings/subcontainers/Vertebrates/subcontainers/Animal/instances/animal1> {
+    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/instances/animal1>
+            a       <http://www.w3.org/ns/ldp#RDFSource> ;
+            <http://xmlns.com/foaf/0.1/primaryTopic>
+                    <http://opensensingcity.emse.fr/test/data/animal1> .
+    
+    <http://opensensingcity.emse.fr/test/data/animal1>
+            a       <http://opensensingcity.emse.fr/test/ontology/Animal> ;
+            <http://purl.org/dc/elements/1.1/title>
+                    "an animal" .
+}
+
+<LivingThings> {
+    <LivingThings>  a  <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> ;
+            <http://www.w3.org/ns/ldp#contains>
+                    <LivingThings/instances> , <LivingThings/subcontainers> ;
+            <http://xmlns.com/foaf/0.1/primaryTopic>
+                    <http://opensensingcity.emse.fr/test/ontology/LivingThings> .
+}
+
+<LivingThings/subcontainers/Vertebrates> {
+    <LivingThings/subcontainers/Vertebrates>
+            a       <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> ;
+            <http://www.w3.org/ns/ldp#contains>
+                    <LivingThings/subcontainers/Vertebrates/instances> , <LivingThings/subcontainers/Vertebrates/subcontainers> ;
+            <http://xmlns.com/foaf/0.1/primaryTopic>
+                    <http://opensensingcity.emse.fr/test/ontology/Vertebrates> .
+    
+    <http://opensensingcity.emse.fr/test/ontology/Vertebrates>
+            <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                    <http://opensensingcity.emse.fr/test/ontology/LivingThings> .
+}
+
+<LivingThings/subcontainers/Vertebrates/subcontainers/Animal> {
+    <http://opensensingcity.emse.fr/test/ontology/Animal>
+            <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                    <http://opensensingcity.emse.fr/test/ontology/Vertebrates> .
+    
+    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal>
+            a       <http://www.w3.org/ns/ldp#RDFSource> , <http://www.w3.org/ns/ldp#Container> , <http://www.w3.org/ns/ldp#BasicContainer> ;
+            <http://www.w3.org/ns/ldp#contains>
+                    <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/instances> , <LivingThings/subcontainers/Vertebrates/subcontainers/Animal/subcontainers> ;
+            <http://xmlns.com/foaf/0.1/primaryTopic>
+                    <http://opensensingcity.emse.fr/test/ontology/Animal> .
+}

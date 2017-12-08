@@ -1,0 +1,37 @@
+@prefix :     <http://opensensingcity.emse.fr/LDPDesignVocabulary/> .
+@prefix data:     <http://opensensingcity.emse.fr/LDPDesign/data/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+data:classCM a :ContainerMap;
+    :iriTemplate "$path(res,2)$";
+    :resourceMap data:classRM;
+    :nonContainerMap data:instancesCM;
+    :containerMap data:subclassCM .
+
+data:classRM a :ResourceMap;
+    :resourceQuery "{  { ?x rdfs:subClassOf ?res .} MINUS { ?res rdfs:subClassOf ?y .}  .}";
+    :graphQuery "CONSTRUCT { ?res ?p ?o . } WHERE {  ?res ?p ?o . }" .
+
+data:instancesCM a :NonContainerMap;
+	:iriTemplate "$path(res,2)$";
+	:resourceMap data:instancesRM .
+
+data:instancesRM a :ResourceMap;
+	:resourceQuery "{ ?res rdf:type $parent$ . }";
+    :graphQuery "CONSTRUCT { ?res ?p ?o . } WHERE {  ?res ?p ?o . }" .
+
+data:subclassCM a :ContainerMap;
+	:iriTemplate "$path(res,2)$";
+	:resourceMap data:subClassRM;
+	:nonContainerMap data:instancesCM;
+	:containerMap data:subclassCM .
+
+data:subClassRM a :ResourceMap;
+	:resourceQuery "{ ?res rdfs:subClassOf $parent$ .}";
+    :graphQuery "CONSTRUCT { ?res ?p ?o . } WHERE {  ?res ?p ?o . }" .
+
+
